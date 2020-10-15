@@ -12,14 +12,16 @@
         </div>
     {% endfor %}
     <div class="page-header">
-        <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+        <h1>Welcome to Lab 4&5, Docker intro!</h1>
+        <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}! <br/>
         {% if email %}
             {% if 'utoronto' in email %}
-                <h1>Your UofT email is {{email}}</h1>
+                Your UofT email is {{email}}
             {% else %}
-                <h1>Please use your UofT email.</h1>
+                Please use your UofT email.
             {% endif %}
         {% endif %}
+    </h1>
     </div>
     {{ wtf.quick_form(form) }}
 </div>
